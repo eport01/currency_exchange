@@ -7,21 +7,36 @@
           null
         ]
       },
-      "/Users/emilyport/Desktop/Practice/money/app/controllers/currency_controller.rb": {
+      "/Users/emilyport/Desktop/Practice/money/app/controllers/users_controller.rb": {
         "lines": [
           1,
-          null,
           1,
-          2,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
-          1,
           null,
           null,
-          null,
-          1,
           1,
           0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -29,6 +44,97 @@
       "/Users/emilyport/Desktop/Practice/money/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/controllers/currency_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/poros/currency.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/facades/currency_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          442,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/services/currency_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -40,58 +146,8 @@
           1,
           null
         ]
-      },
-      "/Users/emilyport/Desktop/Practice/money/app/facades/currency_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/emilyport/Desktop/Practice/money/app/services/currency_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/emilyport/Desktop/Practice/money/app/poros/currency.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/emilyport/Desktop/Practice/money/app/models/user.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1694965388
+    "timestamp": 1694968740
   }
 }

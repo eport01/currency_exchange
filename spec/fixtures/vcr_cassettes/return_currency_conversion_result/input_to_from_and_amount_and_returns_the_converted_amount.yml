@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.apilayer.com/fixer/convert?amount=50&from=EUR&to=GBP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - iG4NgXWh44twKerQjSQXvOIJVkxYSPgW
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Sep 2023 15:42:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8082759b29d8538a-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Apo-Via:
+      - origin,host
+      Ratelimit-Limit:
+      - '100'
+      Ratelimit-Remaining:
+      - '99'
+      Ratelimit-Reset:
+      - '1153044'
+      X-Cloud-Trace-Context:
+      - c19ae9b21625561950f222a991b8a460
+      X-Ratelimit-Limit-Day:
+      - '100'
+      X-Ratelimit-Limit-Month:
+      - '100'
+      X-Ratelimit-Remaining-Day:
+      - '99'
+      X-Ratelimit-Remaining-Month:
+      - '99'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7TLggYobMAuU%2BScnzSOLKfrS0kk6b4cvEwPG2ypKo2NNt3tNkO%2F77tkH02Emf2yB47Aw8nU6bUpBYH4usx2%2FjlJL4sqvr866UvhnWRHj4pCZmeVnmCLo3JHgrh3XJ02n44U%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+            "success": true,
+            "query": {
+                "from": "EUR",
+                "to": "GBP",
+                "amount": 50
+            },
+            "info": {
+                "timestamp": 1694965323,
+                "rate": 0.861735
+            },
+            "date": "2023-09-17",
+            "result": 43.08675
+        }
+  recorded_at: Sun, 17 Sep 2023 15:42:36 GMT
+recorded_with: VCR 6.2.0

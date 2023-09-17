@@ -1,0 +1,97 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/emilyport/Desktop/Practice/money/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/controllers/currency_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/serializers/currency_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/facades/currency_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/services/currency_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/poros/currency.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/emilyport/Desktop/Practice/money/app/models/user.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1694965388
+  }
+}

@@ -50,7 +50,7 @@ gem 'rack-cors'
 gem 'jsonapi-serializer'
 gem 'figaro'
 gem 'faraday'
-
+gem 'rack-attack'
 # Use Sass to process CSS
 # gem "sassc-rails"
 

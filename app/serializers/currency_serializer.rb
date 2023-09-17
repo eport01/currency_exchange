@@ -1,5 +1,5 @@
 class CurrencySerializer
   include JSONAPI::Serializer 
   set_id {nil}
-  attributes :result 
+  attributes :from, :to, :initial, :result 
 end

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :currency, only: [:index] 
+  resources :currency
   resources :users 
 
   get "/login", to: "users#login"

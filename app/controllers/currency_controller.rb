@@ -1,11 +1,22 @@
 class CurrencyController < ApplicationController
-  # before_action :find_user 
+  before_action :find_user 
   def index 
-    if !params[:to].present? || !params[:from].present? || !params[:amount].present?
-      render json: {error: "Cannot complete request"}, status: 400
+    if @user != nil && params[:api_key]
+      currency_cache = Rails.cache.read(['currency_data'])
+      if currency_cache == nil 
+        currency_cache = CurrencyFacade.convert(params[:from], params[:to], params[:initial])
+        Rails.cache.write(['currency_data'], currency_cache, expires_in: 5.minute)
+        render json: CurrencySerializer.new(currency_cache)
+      else
+        render json: CurrencySerializer.new(currency_cache)    
+      end
     else
-      render json: CurrencySerializer.new(CurrencyFacade.conversion(params[:to], params[:from], params[:amount]))
-    end 
+      render json: {error: "Please create an account to receive an API key"}
+
+    end
+    
+    
+    # render json: CurrencySerializer.new(CurrencyFacade.convert(params[:from], params[:to], params[:initial]))
   end
 
   private 

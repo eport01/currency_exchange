@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'return currency conversion result' do 
-  it 'input to, from, and amount and returns the converted amount', :vcr do 
+  it 'from country and ', :vcr do 
     to = "GBP"
     from = "EUR"
     amount = 50 

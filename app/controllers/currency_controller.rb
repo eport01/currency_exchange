@@ -14,9 +14,6 @@ class CurrencyController < ApplicationController
       render json: {error: "Please create an account to receive an API key"}
 
     end
-    
-    
-    # render json: CurrencySerializer.new(CurrencyFacade.convert(params[:from], params[:to], params[:initial]))
   end
 
   private 

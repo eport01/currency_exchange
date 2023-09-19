@@ -2,17 +2,12 @@ require 'rails_helper'
 
 RSpec.describe 'return currency conversion result' do 
 
-
-  # before :each do
-  #   post "http://localhost:3000/users", headers: {'CONTENT_TYPE' => 'application/json'}, params: {name: "Louie", email: "123@email.com", password: "1234"}
-  # end
-
   it 'input to, from, and amount and returns the converted amount', :vcr do 
 
     user = {
       name: "Louie",
       email: "louie@email.com",
-      password: "1234"
+      password: "1234", 
     }
     expect(user[:api_key]).to eq(nil)
 
@@ -48,6 +43,8 @@ RSpec.describe 'return currency conversion result' do
     expect(result[:attributes][:result]).to eq(43.058975987909776)
 
   end
+
+  #TODO: Add Rack::Attack tests
 
   # describe 'request without api key' do
   #   it 'sad path, if to, from, or amount is blank, error message is returned', :vcr do 

@@ -14,7 +14,4 @@ class Rack::Attack
       end
     end
   end 
-
-
-  # @params = JSON.parse(req.body.read)
 end

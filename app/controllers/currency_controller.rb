@@ -5,7 +5,7 @@ class CurrencyController < ApplicationController
       currency_cache = Rails.cache.read(['currency_data'])
       if currency_cache == nil 
         currency_cache = CurrencyFacade.convert(params[:from], params[:to], params[:initial])
-        Rails.cache.write(['currency_data'], currency_cache, expires_in: 5.minute)
+        Rails.cache.write(['currency_data'], currency_cache, expires_in: 5.seconds)
         render json: CurrencySerializer.new(currency_cache)
       else
         render json: CurrencySerializer.new(currency_cache)    

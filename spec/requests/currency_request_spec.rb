@@ -58,4 +58,6 @@ RSpec.describe 'return currency conversion result' do
       expect(error_result[:error]).to eq("Please create an account to receive an API key")
     end
   end 
+
+  #TODO: Test currency cache 
 end

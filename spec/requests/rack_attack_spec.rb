@@ -59,11 +59,10 @@ RSpec.describe "Rack::Attack", type: :request do
         expect(response.body).to include("Retry later")
 
         expect(response).to have_http_status(:too_many_requests)
-        # travel_to  Time.zone.parse('2023-09-17 08:01:00') do
-        #   get currency_index_path, params: valid_params
-        #   expect(response).to have_http_status(:ok)
-
-        # end
+      # travel_to  Time.zone.parse('2023-09-17 08:01:00') do
+      #   get currency_index_path, params: valid_params
+      #   expect(response).to have_http_status(:ok)
+      # end
       end
     end
 

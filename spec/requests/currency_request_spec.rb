@@ -44,18 +44,18 @@ RSpec.describe 'return currency conversion result' do
 
   end
 
-  #TODO: Add Rack::Attack tests
+  describe 'request without api key' do
+    it 'sad path, cannot complete request without api_key', :vcr do 
+      to = "GBP"
+      from = "EUR"
+      initial = 10
 
-  # describe 'request without api key' do
-  #   it 'sad path, if to, from, or amount is blank, error message is returned', :vcr do 
-  #     to = "GBP"
-  #     from = "EUR"
+      get "/currency?to=#{to}&from=#{from}&initial=#{initial}", headers: {'CONTENT_TYPE' => 'application/json'}
+      error_result = JSON.parse(response.body, symbolize_names: true)
 
-  #     get "/currency?to=#{to}&from=#{from}&initial=#{}", headers: {'CONTENT_TYPE' => 'application/json'}, params: {api_key: ""}
-  #     error_result = JSON.parse(response.body, symbolize_names: true)
-  #     expect(response).to have_http_status 400 
+      expect(response).to have_http_status 400 
 
-  #     expect(error_result[:error]).to eq("Cannot complete request")
-  #   end
-  # end 
+      expect(error_result[:error]).to eq("Please create an account to receive an API key")
+    end
+  end 
 end

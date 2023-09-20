@@ -11,7 +11,7 @@ class CurrencyController < ApplicationController
         render json: CurrencySerializer.new(currency_cache)    
       end
     else
-      render json: {error: "Please create an account to receive an API key"}
+      render json: {error: "Please create an account to receive an API key"}, status: 400
 
     end
   end
